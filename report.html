@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head><title>Vulnerability Scan Report - https://ruwix.com/online-rubiks-stopwatch-timer</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; }
+h1 { color: #d44; }
+.vuln { border: 1px solid #ddd; margin: 10px 0; padding: 10px; border-radius: 5px; }
+.critical { border-left: 5px solid #d44; }
+.payload { background: #f5f5f5; padding: 5px; font-family: monospace; }
+</style>
+</head>
+<body>
+<h1>Vulnerability Scan Report</h1>
+<p>Target: https://ruwix.com/online-rubiks-stopwatch-timer</p>
+<p>Date: 2026-07-03 11:25</p>
+
+<h2>Summary</h2>
+<ul>
+<li>SQL Injection: 3</li>
+<li>XSS: 0</li>
+<li>Directory Traversal: 0</li>
+<li><strong>Total: 3</strong></li>
+</ul>
+
+<h2>SQL Injection Findings</h2>
+<div class="vuln critical">
+<h3>SQLi at https://x.com/intent/tweet?url=https://ruwix.com/online-rubiks-stopwatch-timer/&text=Check%2Bthis%2Bout:</h3>
+<p><strong>Parameter:</strong> url</p>
+<p><strong>Type:</strong> error_based</p>
+<p><strong>Payload:</strong> <span class="payload">'</span></p>
+</div><div class="vuln critical">
+<h3>SQLi at https://x.com/intent/tweet?url=https://ruwix.com/online-rubiks-stopwatch-timer/&text=Check%2Bthis%2Bout:</h3>
+<p><strong>Parameter:</strong> text</p>
+<p><strong>Type:</strong> error_based</p>
+<p><strong>Payload:</strong> <span class="payload">'</span></p>
+</div><div class="vuln critical">
+<h3>SQLi at https://x.com/intent/tweet?url=https://ruwix.com/online-rubiks-stopwatch-timer/&text=Check%2Bthis%2Bout:</h3>
+<p><strong>Parameter:</strong> failedScript</p>
+<p><strong>Type:</strong> error_based</p>
+<p><strong>Payload:</strong> <span class="payload">'</span></p>
+</div>
+
+<h2>XSS Findings</h2>
+<p>No vulnerabilities found.</p>
+
+<h2>Directory Traversal Findings</h2>
+<p>No vulnerabilities found.</p>
+</body>
+</html>
